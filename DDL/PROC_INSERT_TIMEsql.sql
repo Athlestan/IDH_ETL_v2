@@ -57,7 +57,7 @@ BEGIN
           	END
  
           	INSERT INTO dbo.D_TIME
-                 	VALUES(DATEPART(DAY, @data), DATEPART(MM, @data), DATEPART(YEAR, @data), @season_num, @day, @month, @season)
+                 	VALUES(@data, DATEPART(DAY, @data), DATEPART(MM, @data), DATEPART(YEAR, @data), @season_num, @day, @month, @season)
           	SET @korektor = @korektor + 1
    	END
  

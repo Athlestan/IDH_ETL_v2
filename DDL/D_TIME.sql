@@ -1,6 +1,7 @@
 use IDH_DWH;
 CREATE TABLE [dbo].[D_TIME](
    	[TIME_RK] [int] IDENTITY(1,1) NOT NULL,
+	[Day_dt] [date] NOT NULL,
    	[Day] [int] NOT NULL,
    	[Month] [int] NOT NULL,
    	[Year] [int] NOT NULL,
