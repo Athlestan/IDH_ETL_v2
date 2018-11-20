@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="F_Accidents"
   DTS:PackageType="5"
-  DTS:VersionBuild="69"
-  DTS:VersionGUID="{F945B5E9-A562-4ED2-8867-CA6C17A03B42}">
+  DTS:VersionBuild="95"
+  DTS:VersionGUID="{E75BBAC5-130F-46E7-A1A8-A5DAC8BC5ECC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -684,6 +684,240 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[vehicles_2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FB5429E7-7F3F-4C76-A122-423DFEBCAFBB}"
+      DTS:ObjectName="vehicles_2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\PJWSTK\SEMESTR_3\IDH\Projekt\dft-accident-data -WINNER\Vehicles0515.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Accident_Index"
+              DTS:DTSID="{9D30DD55-069B-4FEE-B527-271FA5B263A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle_Reference"
+              DTS:DTSID="{94EB89CC-CDF7-4948-9BEB-769F71F44063}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle_Type"
+              DTS:DTSID="{862C3947-A00E-4C8B-9AC2-D87182B31197}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Towing_and_Articulation"
+              DTS:DTSID="{A8D7F947-0553-4A40-94DB-24E4B31C2399}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle_Manoeuvre"
+              DTS:DTSID="{1673AAD6-15AB-48CC-B5A3-80F380AEFE03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle_Location-Restricted_Lane"
+              DTS:DTSID="{1C966F58-5E62-4802-9FA7-911E782D5E91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Junction_Location"
+              DTS:DTSID="{F18F06F4-E8A6-4B6C-B8AC-F26B0EFE0F2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Skidding_and_Overturning"
+              DTS:DTSID="{64724897-F6FC-4541-8051-F78681373F28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hit_Object_in_Carriageway"
+              DTS:DTSID="{153AA398-86E2-49A1-942C-D3070EE0A8A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle_Leaving_Carriageway"
+              DTS:DTSID="{F3F450EA-EA23-4D90-8F8D-45610EA491C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hit_Object_off_Carriageway"
+              DTS:DTSID="{E2410B9D-4DD1-4EF3-8B53-9E33EEC8F31C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1st_Point_of_Impact"
+              DTS:DTSID="{71E6B68D-8442-44A7-8B78-6A59B0550DCF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Was_Vehicle_Left_Hand_Drive?"
+              DTS:DTSID="{895729D9-F12E-4D89-B4EA-806F181339B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Journey_Purpose_of_Driver"
+              DTS:DTSID="{32B5EE51-68D3-4AE8-B0BE-7EA6C706A0FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sex_of_Driver"
+              DTS:DTSID="{D1CEC93F-F89C-45AB-BE6E-453750860867}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age_of_Driver"
+              DTS:DTSID="{F3B31863-7999-4929-BB98-908045FD94D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age_Band_of_Driver"
+              DTS:DTSID="{D219496D-8F4F-4B9E-850B-604BB7C1C044}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Engine_Capacity_(CC)"
+              DTS:DTSID="{22B7BD4B-87CE-4CCC-AD70-9C008BB3B6D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Propulsion_Code"
+              DTS:DTSID="{DBB4C946-AA43-4206-AFFF-0D68D7B5AB71}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age_of_Vehicle"
+              DTS:DTSID="{2E0E6A3F-2842-4794-88EB-AE9C9641801A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Driver_IMD_Decile"
+              DTS:DTSID="{5945C50B-1836-49F3-BFB9-5E606D1CDC53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Driver_Home_Area_Type"
+              DTS:DTSID="{5168076C-1ED1-4BD0-BF4D-AE4E7E464091}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Vehicle_Type]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D8413DF2-7509-45F9-AD08-EF73BC7B8E47}"
+      DTS:ObjectName="Vehicle_Type">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\PJWSTK\SEMESTR_3\IDH\Projekt\dft-accident-data -WINNER\contextCSVs\Vehicle_Type.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="code"
+              DTS:DTSID="{D8153F1B-F6B3-4703-8860-5C69415B86CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="37"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="label"
+              DTS:DTSID="{2C4A30E2-0AFB-4BB2-A35A-149F011E10DD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -700,7 +934,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{0C8F57D8-E1E4-4584-9DFA-2C2D1550F5D4}"
-          SQLTask:SqlStatementSource="insert into F_ACCIDENTS &#xA;select &#xA;       st.[Accident_Index]&#xA;      ,st.[TIME_RK]&#xA;      ,st.[ACCIDENT_SEVERITY_RK]&#xA;      ,st.[REGION_RK]&#xA;      ,st.[ROAD_TYPE_RK]&#xA;      ,st.[WEATHER_RK]&#xA;      ,st.[SPEED_LIMIT_RK]&#xA;      ,coalesce(d.[TIME_OF_DAY_RK], -1)&#xA;      ,st.[Vehicles_cnt]&#xA;      ,st.[Casulties_cnt]&#xA;      ,st.[Longitude]&#xA;      ,st.[Latitude]&#xA;      ,st.[Female_driver_cnt]&#xA;      ,st.[Male_drive_cnt]&#xA; from F_ACCIDENTS_ST as st&#xA;left join D_TIME_OF_DAY as d&#xA;on (&#xA;&#x9;st.Accident_time &gt;= d.time_from &#xA;&#x9;and st.Accident_time &lt; d.time_to&#xA;)&#xA;;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="insert into F_ACCIDENTS &#xA;select &#xA;       st.[Accident_Index]&#xA;      ,st.[TIME_RK]&#xA;      ,st.[ACCIDENT_SEVERITY_RK]&#xA;      ,st.[REGION_RK]&#xA;      ,st.[ROAD_TYPE_RK]&#xA;      ,st.[WEATHER_RK]&#xA;      ,st.[SPEED_LIMIT_RK]&#xA;      ,d.[TIME_OF_DAY_RK]&#xA;      ,st.[Vehicles_cnt]&#xA;      ,st.[Casulties_cnt]&#xA;      ,st.[Longitude]&#xA;      ,st.[Latitude]&#xA;      ,st.[Female_driver_cnt]&#xA;      ,st.[Male_drive_cnt]&#xA;      ,st.[Is_Motorcycle_flg]&#xA; from F_ACCIDENTS_ST as st&#xA;left join D_TIME_OF_DAY as d&#xA;on (&#xA;&#x9;(st.Accident_time &gt;= d.time_from &#xA;&#x9;and st.Accident_time &lt; d.time_to )&#xA;&#x9;or (&#xA;&#x9;&#x9;st.Accident_time &gt;= '22:00:00.000'&#xA;&#x9;&#x9;and st.Accident_time &gt;= d.time_from&#xA;&#x9;&#x9;and d.time_from &gt;= '22:00:00.000'&#xA;&#x9;)&#xA;&#x9;or (&#xA;&#x9;&#x9;st.Accident_time &lt; '06:00:00.000'&#xA;&#x9;&#x9;and st.Accident_Time &lt; d.time_to&#xA;&#x9;&#x9;and d.time_to &lt;= '06:00:00.000'&#xA;&#x9;)&#xA;)&#xA;where &#xA;st.latitude is not null &#xA;and st.longitude is not null&#xA;and st.Accident_time is not null&#xA;;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1236,7 +1470,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate 2.Outputs[Aggregate Output 1].Columns[Accident_Index]"
-                      codePage="65001"
+                      codePage="1250"
                       dataType="str"
                       length="13"
                       lineageId="Package\Data Flow Task\Aggregate 2.Outputs[Aggregate Output 1].Columns[Accident_Index]"
@@ -1320,6 +1554,97 @@
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Task\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[Vehicle_Type]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="37"
+                      cachedName="Vehicle_Type"
+                      lineageId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Case 1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[FINDSTRING]([UPPER]([TRIM](#{Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type]})),"MOTORCYCLE",1) &gt; 1</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">FINDSTRING(UPPER(TRIM(Vehicle_Type)),"MOTORCYCLE",1) &gt; 1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task\Derived Column"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -1336,36 +1661,59 @@
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Speed_limit_to_SPEED_LIMIT_RK]"
                       cachedDataType="i8"
                       cachedName="Speed_limit_to_SPEED_LIMIT_RK"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]" />
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Date_to_TIME_RK]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Date_to_TIME_RK"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]" />
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Longitude]"
                       cachedDataType="wstr"
                       cachedLength="9"
                       cachedName="Longitude"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Longitude]" />
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Longitude]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Latitude]"
                       cachedDataType="wstr"
                       cachedLength="9"
                       cachedName="Latitude"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Latitude]" />
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Latitude]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[C_Female_Driver_cnt_by_sex]"
                       cachedDataType="ui8"
                       cachedName="C_Female_Driver_cnt_by_sex"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]" />
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[C_Male_Driver_cnt_by_sex]"
                       cachedDataType="ui8"
                       cachedName="C_Male_Driver_cnt_by_sex"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]" />
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Is_Motocycle_flg]"
+                      cachedDataType="i8"
+                      cachedName="Is_Motocycle_flg"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Is_Motocycle_flg]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[ISNULL](#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Is_Motocycle_flg]}) ==  TRUE  ? 0 : 1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL(Is_Motocycle_flg) ==  TRUE  ? 0 : 1</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1391,7 +1739,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I4)#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]}</property>
+                          name="Expression">(DT_I4)#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1413,7 +1761,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DBDATE)#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]}</property>
+                          name="Expression">(DT_DBDATE)#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1437,7 +1785,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_NUMERIC,9,7)([REPLACE](([TRIM](#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Longitude]}) == "" ? NULL(DT_WSTR,50) : [TRIM](#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Longitude]})),".",","))</property>
+                          name="Expression">(DT_NUMERIC,9,7)([REPLACE](([TRIM](#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Longitude]}) == "" ? NULL(DT_WSTR,50) : [TRIM](#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Longitude]})),".",","))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1461,7 +1809,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_NUMERIC,9,7)([REPLACE](([TRIM](#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Latitude]}) == "" ? NULL(DT_WSTR,50) : [TRIM](#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Latitude]})),".",","))</property>
+                          name="Expression">(DT_NUMERIC,9,7)([REPLACE](([TRIM](#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Latitude]}) == "" ? NULL(DT_WSTR,50) : [TRIM](#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Latitude]})),".",","))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1483,7 +1831,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I8)#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]}</property>
+                          name="Expression">(DT_I8)#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1505,7 +1853,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I8)#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]}</property>
+                          name="Expression">(DT_I8)#{Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1535,6 +1883,79 @@
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Is_Motocycle_flg]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Is_Motocycle_flg]"
+                      name="Is_Motocycle_flg"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I8)1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I8)1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1859,6 +2280,203 @@ where [refTable].[Day_dt] = ?</property>
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Task\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[vehicles_2]"
+                  connectionManagerRefId="Package.ConnectionManagers[vehicles_2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Accident_Index]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Accident_Index]"
+                      length="13"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Accident_Index]"
+                      name="Accident_Index"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle_Type]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Type]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle_Type]"
+                      name="Vehicle_Type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Accident_Index]"
+                      codePage="1250"
+                      dataType="str"
+                      length="13"
+                      name="Accident_Index" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Reference]"
+                      dataType="i1"
+                      name="Vehicle_Reference" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Type]"
+                      dataType="i8"
+                      name="Vehicle_Type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Towing_and_Articulation]"
+                      dataType="i1"
+                      name="Towing_and_Articulation" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Manoeuvre]"
+                      dataType="i1"
+                      name="Vehicle_Manoeuvre" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Location-Restricted_Lane]"
+                      dataType="i1"
+                      name="Vehicle_Location-Restricted_Lane" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Junction_Location]"
+                      dataType="i1"
+                      name="Junction_Location" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Skidding_and_Overturning]"
+                      dataType="i1"
+                      name="Skidding_and_Overturning" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hit_Object_in_Carriageway]"
+                      dataType="i1"
+                      name="Hit_Object_in_Carriageway" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Leaving_Carriageway]"
+                      dataType="i1"
+                      name="Vehicle_Leaving_Carriageway" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hit_Object_off_Carriageway]"
+                      dataType="i1"
+                      name="Hit_Object_off_Carriageway" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[1st_Point_of_Impact]"
+                      dataType="i1"
+                      name="1st_Point_of_Impact" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Was_Vehicle_Left_Hand_Drive?]"
+                      dataType="i1"
+                      name="Was_Vehicle_Left_Hand_Drive?" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Journey_Purpose_of_Driver]"
+                      dataType="i1"
+                      name="Journey_Purpose_of_Driver" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sex_of_Driver]"
+                      dataType="i1"
+                      name="Sex_of_Driver" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age_of_Driver]"
+                      dataType="i1"
+                      name="Age_of_Driver" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age_Band_of_Driver]"
+                      dataType="i1"
+                      name="Age_Band_of_Driver" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Engine_Capacity_(CC)]"
+                      dataType="i2"
+                      name="Engine_Capacity_(CC)" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Propulsion_Code]"
+                      dataType="i1"
+                      name="Propulsion_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age_of_Vehicle]"
+                      dataType="i1"
+                      name="Age_of_Vehicle" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Driver_IMD_Decile]"
+                      dataType="i1"
+                      name="Driver_IMD_Decile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Driver_Home_Area_Type]"
+                      dataType="i1"
+                      name="Driver_Home_Area_Type" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task\F_Accidents_ST"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -2032,6 +2650,12 @@ where [refTable].[Day_dt] = ?</property>
                       cachedName="TIME_RK"
                       externalMetadataColumnId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].ExternalColumns[TIME_RK]"
                       lineageId="Package\Data Flow Task\D_Time.Outputs[Lookup Match Output].Columns[TIME_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].Columns[Is_Motocycle_flg]"
+                      cachedDataType="i8"
+                      cachedName="Is_Motocycle_flg"
+                      externalMetadataColumnId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].ExternalColumns[Is_Motorcycle_flg]"
+                      lineageId="Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Is_Motocycle_flg]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2106,6 +2730,10 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].ExternalColumns[TIME_RK]"
                       dataType="i4"
                       name="TIME_RK" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].ExternalColumns[Is_Motorcycle_flg]"
+                      dataType="i4"
+                      name="Is_Motorcycle_flg" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2243,7 +2871,7 @@ where [refTable].[Day_dt] = ?</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Accident_Index]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="Accident_Index"
@@ -2503,7 +3131,7 @@ where [refTable].[Day_dt] = ?</property>
                       lineageId="Package\Data Flow Task\Sort 3.Outputs[Sort Output].Columns[Sex_of_Driver]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Accident_Index]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="Accident_Index"
@@ -2545,7 +3173,7 @@ where [refTable].[Day_dt] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Accident_Index]"
-                      codePage="65001"
+                      codePage="1250"
                       dataType="str"
                       length="13"
                       lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Accident_Index]"
@@ -2592,6 +3220,478 @@ where [refTable].[Day_dt] = ?</property>
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Task\Merge Join 2"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join 2"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Left Input].Columns[Vehicle_Type_ID]"
+                      cachedDataType="i8"
+                      cachedName="Vehicle_Type_ID"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 5.Outputs[Sort Output].Columns[Vehicle_Type_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Left Input].Columns[Accident_Index]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="Accident_Index"
+                      lineageId="Package\Data Flow Task\Sort 5.Outputs[Sort Output].Columns[Accident_Index]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Right Input].Columns[Vehicle_Type_ID]"
+                      cachedDataType="i8"
+                      cachedName="Vehicle_Type_ID"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 6.Outputs[Sort Output].Columns[Vehicle_Type_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Right Input].Columns[label]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="37"
+                      cachedName="label"
+                      lineageId="Package\Data Flow Task\Sort 6.Outputs[Sort Output].Columns[label]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Accident_Index]"
+                      codePage="1250"
+                      dataType="str"
+                      length="13"
+                      lineageId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Accident_Index]"
+                      name="Accident_Index">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Left Input].Columns[Accident_Index]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="37"
+                      lineageId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type]"
+                      name="Vehicle_Type">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Right Input].Columns[label]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type_ID]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type_ID]"
+                      name="Vehicle_Type_ID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Left Input].Columns[Vehicle_Type_ID]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Merge Join 3"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join 3"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Accident_Index]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="Accident_Index"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Accident_Index]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Longitude]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="Longitude"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Longitude]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Latitude]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="Latitude"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Latitude]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[ACCIDENT_SEVERITY_RK]"
+                      cachedDataType="i8"
+                      cachedName="ACCIDENT_SEVERITY_RK"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ACCIDENT_SEVERITY_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Vehicles_cnt]"
+                      cachedDataType="i8"
+                      cachedName="Vehicles_cnt"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Vehicles_cnt]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Casulties_cnt]"
+                      cachedDataType="i8"
+                      cachedName="Casulties_cnt"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Casulties_cnt]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Date_to_TIME_RK]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Date_to_TIME_RK"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Accident_Time]"
+                      cachedDataType="dbTime"
+                      cachedName="Accident_Time"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Accident_Time]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[REGION_RK]"
+                      cachedDataType="i8"
+                      cachedName="REGION_RK"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[REGION_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[ROAD_TYPE_RK]"
+                      cachedDataType="i8"
+                      cachedName="ROAD_TYPE_RK"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ROAD_TYPE_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Speed_limit_to_SPEED_LIMIT_RK]"
+                      cachedDataType="i8"
+                      cachedName="Speed_limit_to_SPEED_LIMIT_RK"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[WEATHER_RK]"
+                      cachedDataType="i8"
+                      cachedName="WEATHER_RK"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[WEATHER_RK]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[C_Female_Driver_cnt_by_sex]"
+                      cachedDataType="ui8"
+                      cachedName="C_Female_Driver_cnt_by_sex"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[C_Male_Driver_cnt_by_sex]"
+                      cachedDataType="ui8"
+                      cachedName="C_Male_Driver_cnt_by_sex"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Right Input].Columns[Accident_Index]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="Accident_Index"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Accident_Index]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Right Input].Columns[Is_Motocycle_flg]"
+                      cachedDataType="i8"
+                      cachedName="Is_Motocycle_flg"
+                      lineageId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Is_Motocycle_flg]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Accident_Index]"
+                      codePage="1250"
+                      dataType="str"
+                      length="13"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Accident_Index]"
+                      name="Accident_Index"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Accident_Index]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Longitude]"
+                      dataType="wstr"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Longitude]"
+                      name="Longitude">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Longitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Latitude]"
+                      dataType="wstr"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Latitude]"
+                      name="Latitude">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Latitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[ACCIDENT_SEVERITY_RK]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[ACCIDENT_SEVERITY_RK]"
+                      name="ACCIDENT_SEVERITY_RK">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[ACCIDENT_SEVERITY_RK]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Vehicles_cnt]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Vehicles_cnt]"
+                      name="Vehicles_cnt">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Vehicles_cnt]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Casulties_cnt]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Casulties_cnt]"
+                      name="Casulties_cnt">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Casulties_cnt]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]"
+                      codePage="1250"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Date_to_TIME_RK]"
+                      name="Date_to_TIME_RK">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Date_to_TIME_RK]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Accident_Time]"
+                      dataType="dbTime"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Accident_Time]"
+                      name="Accident_Time">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Accident_Time]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[REGION_RK]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[REGION_RK]"
+                      name="REGION_RK">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[REGION_RK]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[ROAD_TYPE_RK]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[ROAD_TYPE_RK]"
+                      name="ROAD_TYPE_RK">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[ROAD_TYPE_RK]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Speed_limit_to_SPEED_LIMIT_RK]"
+                      name="Speed_limit_to_SPEED_LIMIT_RK">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[Speed_limit_to_SPEED_LIMIT_RK]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[WEATHER_RK]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[WEATHER_RK]"
+                      name="WEATHER_RK">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[WEATHER_RK]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]"
+                      dataType="ui8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Female_Driver_cnt_by_sex]"
+                      name="C_Female_Driver_cnt_by_sex">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[C_Female_Driver_cnt_by_sex]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]"
+                      dataType="ui8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[C_Male_Driver_cnt_by_sex]"
+                      name="C_Male_Driver_cnt_by_sex">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input].Columns[C_Male_Driver_cnt_by_sex]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Is_Motocycle_flg]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Is_Motocycle_flg]"
+                      name="Is_Motocycle_flg">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Right Input].Columns[Is_Motocycle_flg]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task\Pivot"
               componentClassID="Microsoft.Pivot"
               contactInfo="Pivot;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -2627,7 +3727,7 @@ where [refTable].[Day_dt] = ?</property>
                     </inputColumn>
                     <inputColumn
                       refId="Package\Data Flow Task\Pivot.Inputs[Pivot Default Input].Columns[Accident_Index]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="Accident_Index"
@@ -2663,7 +3763,7 @@ where [refTable].[Day_dt] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Pivot.Outputs[Pivot Default Output].Columns[Accident_Index]"
-                      codePage="65001"
+                      codePage="1250"
                       dataType="str"
                       length="13"
                       lineageId="Package\Data Flow Task\Pivot.Outputs[Pivot Default Output].Columns[Accident_Index]"
@@ -2797,7 +3897,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[ACCIDENT_SEVERITY_RK]"
                       cachedDataType="i8"
                       cachedName="ACCIDENT_SEVERITY_RK"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ACCIDENT_SEVERITY_RK]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[ACCIDENT_SEVERITY_RK]">
                       <properties>
                         <property
                           containsID="true"
@@ -2810,7 +3910,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[Vehicles_cnt]"
                       cachedDataType="i8"
                       cachedName="Vehicles_cnt"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Vehicles_cnt]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Vehicles_cnt]">
                       <properties>
                         <property
                           containsID="true"
@@ -2823,7 +3923,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[Casulties_cnt]"
                       cachedDataType="i8"
                       cachedName="Casulties_cnt"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Casulties_cnt]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Casulties_cnt]">
                       <properties>
                         <property
                           containsID="true"
@@ -2836,7 +3936,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[REGION_RK]"
                       cachedDataType="i8"
                       cachedName="REGION_RK"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[REGION_RK]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[REGION_RK]">
                       <properties>
                         <property
                           containsID="true"
@@ -2849,7 +3949,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[ROAD_TYPE_RK]"
                       cachedDataType="i8"
                       cachedName="ROAD_TYPE_RK"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ROAD_TYPE_RK]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[ROAD_TYPE_RK]">
                       <properties>
                         <property
                           containsID="true"
@@ -2862,7 +3962,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[WEATHER_RK]"
                       cachedDataType="i8"
                       cachedName="WEATHER_RK"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[WEATHER_RK]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[WEATHER_RK]">
                       <properties>
                         <property
                           containsID="true"
@@ -2957,7 +4057,7 @@ where [refTable].[Day_dt] = ?</property>
                       refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[Accident_Time]"
                       cachedDataType="dbTime"
                       cachedName="Accident_Time"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Accident_Time]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Accident_Time]">
                       <properties>
                         <property
                           containsID="true"
@@ -2973,13 +4073,26 @@ where [refTable].[Day_dt] = ?</property>
                       cachedLength="13"
                       cachedName="Accident_Index"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Accident_Index]">
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Accident_Index]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
                           name="OutputColumnLineageID">#{Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Accident_Index]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2].Columns[Is_Motocycle_flg]"
+                      cachedDataType="i8"
+                      cachedName="Is_Motocycle_flg"
+                      lineageId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output].Columns[Is_Motocycle_flg]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Is_Motocycle_flg]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -3074,6 +4187,11 @@ where [refTable].[Day_dt] = ?</property>
                       length="13"
                       lineageId="Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Accident_Index]"
                       name="Accident_Index" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Is_Motocycle_flg]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Is_Motocycle_flg]"
+                      name="Is_Motocycle_flg" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -3221,7 +4339,7 @@ where [refTable].[Day_dt] = ?</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Accident_Index]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="Accident_Index"
@@ -3283,7 +4401,7 @@ where [refTable].[Day_dt] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Accident_Index]"
-                      codePage="65001"
+                      codePage="1250"
                       dataType="str"
                       length="13"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Accident_Index]"
@@ -3855,7 +4973,7 @@ where [refTable].[Day_dt] = ?</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task\Sort 3.Inputs[Sort Input].Columns[Accident_Index]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="Accident_Index"
@@ -3915,7 +5033,7 @@ where [refTable].[Day_dt] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Sort 3.Outputs[Sort Output].Columns[Accident_Index]"
-                      codePage="65001"
+                      codePage="1250"
                       dataType="str"
                       length="13"
                       lineageId="Package\Data Flow Task\Sort 3.Outputs[Sort Output].Columns[Accident_Index]"
@@ -3985,7 +5103,7 @@ where [refTable].[Day_dt] = ?</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task\Sort 4.Inputs[Sort Input].Columns[Accident_Index]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="Accident_Index"
@@ -4045,7 +5163,7 @@ where [refTable].[Day_dt] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Sort 4.Outputs[Sort Output].Columns[Accident_Index]"
-                      codePage="65001"
+                      codePage="1250"
                       dataType="str"
                       length="13"
                       lineageId="Package\Data Flow Task\Sort 4.Outputs[Sort Output].Columns[Accident_Index]"
@@ -4083,6 +5201,342 @@ where [refTable].[Day_dt] = ?</property>
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Data Flow Task\Pivot.Outputs[Pivot Default Output].Columns[C_Male_Driver_cnt_by_sex]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 5"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 5"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 5.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 5.Inputs[Sort Input].Columns[Accident_Index]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="Accident_Index"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Accident_Index]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 5.Inputs[Sort Input].Columns[Vehicle_Type]"
+                      cachedDataType="i8"
+                      cachedName="Vehicle_Type"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle_Type]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 5.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 5.Outputs[Sort Output].Columns[Accident_Index]"
+                      codePage="1250"
+                      dataType="str"
+                      length="13"
+                      lineageId="Package\Data Flow Task\Sort 5.Outputs[Sort Output].Columns[Accident_Index]"
+                      name="Accident_Index">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Accident_Index]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 5.Outputs[Sort Output].Columns[Vehicle_Type_ID]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Sort 5.Outputs[Sort Output].Columns[Vehicle_Type_ID]"
+                      name="Vehicle_Type_ID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle_Type]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 6"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 6"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 6.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 6.Inputs[Sort Input].Columns[code]"
+                      cachedDataType="i8"
+                      cachedName="code"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[code]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 6.Inputs[Sort Input].Columns[label]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="37"
+                      cachedName="label"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[label]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 6.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 6.Outputs[Sort Output].Columns[Vehicle_Type_ID]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Sort 6.Outputs[Sort Output].Columns[Vehicle_Type_ID]"
+                      name="Vehicle_Type_ID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[code]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 6.Outputs[Sort Output].Columns[label]"
+                      codePage="1250"
+                      dataType="str"
+                      length="37"
+                      lineageId="Package\Data Flow Task\Sort 6.Outputs[Sort Output].Columns[label]"
+                      name="label">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[label]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 7"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 7"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 7.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 7.Inputs[Sort Input].Columns[Accident_Index]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="Accident_Index"
+                      lineageId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Accident_Index]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 7.Inputs[Sort Input].Columns[Vehicle_Type]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="37"
+                      cachedName="Vehicle_Type"
+                      lineageId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 7.Inputs[Sort Input].Columns[Is_Motocycle_flg]"
+                      cachedDataType="i8"
+                      cachedName="Is_Motocycle_flg"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Is_Motocycle_flg]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 7.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Accident_Index]"
+                      codePage="1250"
+                      dataType="str"
+                      length="13"
+                      lineageId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Accident_Index]"
+                      name="Accident_Index"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Accident_Index]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Vehicle_Type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="37"
+                      lineageId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Vehicle_Type]"
+                      name="Vehicle_Type">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output].Columns[Vehicle_Type]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Is_Motocycle_flg]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\Sort 7.Outputs[Sort Output].Columns[Is_Motocycle_flg]"
+                      name="Is_Motocycle_flg">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Is_Motocycle_flg]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -4144,266 +5598,6 @@ where [refTable].[Day_dt] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Reference]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Reference]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Reference]"
-                      name="Vehicle_Reference"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Type]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Type]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Type]"
-                      name="Vehicle_Type"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Towing_and_Articulation]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Towing_and_Articulation]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Towing_and_Articulation]"
-                      name="Towing_and_Articulation"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Manoeuvre]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Manoeuvre]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Manoeuvre]"
-                      name="Vehicle_Manoeuvre"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Location-Restricted_Lane]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Location-Restricted_Lane]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Location-Restricted_Lane]"
-                      name="Vehicle_Location-Restricted_Lane"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Junction_Location]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Junction_Location]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Junction_Location]"
-                      name="Junction_Location"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Skidding_and_Overturning]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Skidding_and_Overturning]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Skidding_and_Overturning]"
-                      name="Skidding_and_Overturning"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Hit_Object_in_Carriageway]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Hit_Object_in_Carriageway]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Hit_Object_in_Carriageway]"
-                      name="Hit_Object_in_Carriageway"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Leaving_Carriageway]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Vehicle_Leaving_Carriageway]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Vehicle_Leaving_Carriageway]"
-                      name="Vehicle_Leaving_Carriageway"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Hit_Object_off_Carriageway]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Hit_Object_off_Carriageway]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Hit_Object_off_Carriageway]"
-                      name="Hit_Object_off_Carriageway"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[1st_Point_of_Impact]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[1st_Point_of_Impact]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[1st_Point_of_Impact]"
-                      name="1st_Point_of_Impact"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Was_Vehicle_Left_Hand_Drive?]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Was_Vehicle_Left_Hand_Drive?]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Was_Vehicle_Left_Hand_Drive?]"
-                      name="Was_Vehicle_Left_Hand_Drive?"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Journey_Purpose_of_Driver]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Journey_Purpose_of_Driver]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Journey_Purpose_of_Driver]"
-                      name="Journey_Purpose_of_Driver"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Sex_of_Driver]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
@@ -4411,148 +5605,6 @@ where [refTable].[Day_dt] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Sex_of_Driver]"
                       lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Sex_of_Driver]"
                       name="Sex_of_Driver"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Age_of_Driver]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Age_of_Driver]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Age_of_Driver]"
-                      name="Age_of_Driver"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Age_Band_of_Driver]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Age_Band_of_Driver]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Age_Band_of_Driver]"
-                      name="Age_Band_of_Driver"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Engine_Capacity_(CC)]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Engine_Capacity_(CC)]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Engine_Capacity_(CC)]"
-                      name="Engine_Capacity_(CC)"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Propulsion_Code]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Propulsion_Code]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Propulsion_Code]"
-                      name="Propulsion_Code"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Age_of_Vehicle]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Age_of_Vehicle]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Age_of_Vehicle]"
-                      name="Age_of_Vehicle"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Driver_IMD_Decile]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Driver_IMD_Decile]"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Driver_IMD_Decile]"
-                      name="Driver_IMD_Decile"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Driver_Home_Area_Type]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].ExternalColumns[Driver_Home_Area_Type]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output].Columns[Driver_Home_Area_Type]"
-                      name="Driver_Home_Area_Type"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -4689,6 +5741,123 @@ where [refTable].[Day_dt] = ?</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Data Flow Task\Vehicle_type_txt"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Vehicle_type_txt"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Vehicle_type_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Vehicle_Type]"
+                  connectionManagerRefId="Package.ConnectionManagers[Vehicle_Type]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[code]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].ExternalColumns[code]"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[code]"
+                      name="code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[label]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].ExternalColumns[label]"
+                      length="37"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].Columns[label]"
+                      name="label"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].ExternalColumns[code]"
+                      dataType="i8"
+                      name="code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output].ExternalColumns[label]"
+                      codePage="1250"
+                      dataType="str"
+                      length="37"
+                      name="label" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
@@ -4697,45 +5866,75 @@ where [refTable].[Day_dt] = ?</property>
               name="Aggregate Output 1"
               startId="Package\Data Flow Task\Aggregate 2.Outputs[Aggregate Output 1]" />
             <path
+              refId="Package\Data Flow Task.Paths[Case 1]"
+              endId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
+              name="Case 1"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Case 1]" />
+            <path
               refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\Sort 7.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
               endId="Package\Data Flow Task\Remove unused columns.Inputs[Union All Input 2]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\Sort 6.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Vehicle_type_txt.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output1]"
               endId="Package\Data Flow Task\Aggregate 2.Inputs[Aggregate Input 1]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\Vehicles_txt.Outputs[Flat File Source Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output1]"
-              endId="Package\Data Flow Task\Sort 2.Inputs[Sort Input]"
-              name="Flat File Source Output"
-              startId="Package\Data Flow Task\Sex_of_driver_csv.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output2]"
               endId="Package\Data Flow Task\Sort 1.Inputs[Sort Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\Accident_txt.Outputs[Flat File Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
-              endId="Package\Data Flow Task\D_Time.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task\D_Speed_Limit.Outputs[Lookup Match Output]" />
+              refId="Package\Data Flow Task.Paths[Flat File Source Output3]"
+              endId="Package\Data Flow Task\Sort 2.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Sex_of_driver_csv.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output4]"
+              endId="Package\Data Flow Task\Sort 5.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output1]"
               endId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\D_Time.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Merge Join Output]"
-              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
+              endId="Package\Data Flow Task\D_Time.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task\D_Speed_Limit.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output1]"
+              endId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Merge Join Output"
               startId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Merge Join Output1]"
+              refId="Package\Data Flow Task.Paths[Merge Join Output2]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              name="Merge Join Output"
+              startId="Package\Data Flow Task\Merge Join 3.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output]"
               endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output3]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              name="Merge Join Output"
+              startId="Package\Data Flow Task\Merge Join 2.Outputs[Merge Join Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Pivot Default Output]"
               endId="Package\Data Flow Task\Sort 4.Inputs[Sort Input]"
@@ -4743,19 +5942,19 @@ where [refTable].[Day_dt] = ?</property>
               startId="Package\Data Flow Task\Pivot.Outputs[Pivot Default Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Sort Output]"
-              endId="Package\Data Flow Task\Pivot.Inputs[Pivot Default Input]"
+              endId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+              startId="Package\Data Flow Task\Sort 5.Outputs[Sort Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Sort Output1]"
-              endId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Data Flow Task\Sort 4.Outputs[Sort Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Sort Output2]"
               endId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Data Flow Task\Sort 3.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output2]"
+              endId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 4.Outputs[Sort Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Sort Output3]"
               endId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input]"
@@ -4767,6 +5966,21 @@ where [refTable].[Day_dt] = ?</property>
               name="Sort Output"
               startId="Package\Data Flow Task\Sort 1.Outputs[Sort Output]" />
             <path
+              refId="Package\Data Flow Task.Paths[Sort Output5]"
+              endId="Package\Data Flow Task\Merge Join 3.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 7.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output6]"
+              endId="Package\Data Flow Task\Pivot.Inputs[Pivot Default Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output7]"
+              endId="Package\Data Flow Task\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 6.Outputs[Sort Output]" />
+            <path
               refId="Package\Data Flow Task.Paths[Union All Output 1]"
               endId="Package\Data Flow Task\D_Speed_Limit.Inputs[Lookup Input]"
               name="Union All Output 1"
@@ -4776,19 +5990,19 @@ where [refTable].[Day_dt] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Truncate F_ACCIDENTS"
+      DTS:refId="Package\Truncate F_ACCIDENTS, F_Accidents_ST"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{9C6AFBDC-99E1-4645-93C2-17F17CEB30C9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Truncate F_ACCIDENTS"
+      DTS:ObjectName="Truncate F_ACCIDENTS, F_Accidents_ST"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{0C8F57D8-E1E4-4584-9DFA-2C2D1550F5D4}"
-          SQLTask:SqlStatementSource="truncate table F_Accidents;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table F_Accidents_ST; truncate table F_Accidents;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -4805,7 +6019,7 @@ where [refTable].[Day_dt] = ?</property>
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
       DTS:DTSID="{ED6E178C-370E-4527-B285-00C722113946}"
-      DTS:From="Package\Truncate F_ACCIDENTS"
+      DTS:From="Package\Truncate F_ACCIDENTS, F_Accidents_ST"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Data Flow Task" />
@@ -4831,8 +6045,8 @@ where [refTable].[Day_dt] = ?</property>
           Id="Package\Data Flow Task"
           TopLeft="270,144" />
         <NodeLayout
-          Size="202,42"
-          Id="Package\Truncate F_ACCIDENTS"
+          Size="255,42"
+          Id="Package\Truncate F_ACCIDENTS, F_Accidents_ST"
           TopLeft="261,34" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
@@ -4858,13 +6072,13 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="362,76">
+          TopLeft="388.5,76">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.5,68"
+              EndConnector="-41,68"
               Start="0,0"
-              End="-14.5,60.5">
+              End="-41,60.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -4875,13 +6089,13 @@ where [refTable].[Day_dt] = ?</property>
                     Point2="0,34"
                     Point3="-4,34" />
                   <mssgle:LineSegment
-                    End="-10.5,34" />
+                    End="-37,34" />
                   <mssgle:CubicBezierSegment
-                    Point1="-10.5,34"
-                    Point2="-14.5,34"
-                    Point3="-14.5,38" />
+                    Point1="-37,34"
+                    Point2="-41,34"
+                    Point3="-41,38" />
                   <mssgle:LineSegment
-                    End="-14.5,60.5" />
+                    End="-41,60.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4899,76 +6113,112 @@ where [refTable].[Day_dt] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="108,42"
-          Id="Package\Data Flow Task\Sort 3"
-          TopLeft="73.5,209.5" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Data Flow Task\Sort 4"
-          TopLeft="242.5,617.5" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Data Flow Task\F_Accidents_ST"
-          TopLeft="212,1216" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="217.5,821.5" />
-        <NodeLayout
-          Size="99,42"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="247,413.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Data Flow Task\D_Speed_Limit"
-          TopLeft="219.5,1025.5" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Data Flow Task\Sex_of_driver_csv"
-          TopLeft="212,107.5" />
+          Size="118,42"
+          Id="Package\Data Flow Task\D_Time"
+          TopLeft="438,1127.5" />
         <NodeLayout
           Size="108,42"
           Id="Package\Data Flow Task\Sort 2"
-          TopLeft="242.5,209.5" />
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Data Flow Task\Merge Join 1"
-          TopLeft="225.5,311.5" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Data Flow Task\Sort 1"
-          TopLeft="73.5000000000001,617.5" />
-        <NodeLayout
-          Size="118,42"
-          Id="Package\Data Flow Task\D_Time"
-          TopLeft="237.5,1126.5" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Data Flow Task\Vehicles_txt"
-          TopLeft="12.5,5.5" />
-        <NodeLayout
-          Size="104,42"
-          Id="Package\Data Flow Task\Pivot"
-          TopLeft="244.5,515.5" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Data Flow Task\Aggregate 2"
-          TopLeft="12,107.5" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Data Flow Task\Accident_txt"
-          TopLeft="25,468" />
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Data Flow Task\Merge Join"
-          TopLeft="230,719.5" />
+          TopLeft="82.0000000000001,209.5" />
         <NodeLayout
           Size="203,42"
           Id="Package\Data Flow Task\Remove unused columns"
-          TopLeft="195,923.5" />
+          TopLeft="395.5,923.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 7"
+          TopLeft="637,650" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Data Flow Task\Aggregate 2"
+          TopLeft="235.5,107.5" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Data Flow Task\Merge Join 1"
+          TopLeft="234,311.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Data Flow Task\Sex_of_driver_csv"
+          TopLeft="5.5,107.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 6"
+          TopLeft="753,308" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task\D_Speed_Limit"
+          TopLeft="420,1025.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task\F_Accidents_ST"
+          TopLeft="417,1229.5" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Data Flow Task\Derived Column 1"
+          TopLeft="614,565" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 5"
+          TopLeft="519,294" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task\Vehicle_type_txt"
+          TopLeft="717,219" />
+        <NodeLayout
+          Size="104,42"
+          Id="Package\Data Flow Task\Pivot"
+          TopLeft="253,515.5" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Data Flow Task\Merge Join 3"
+          TopLeft="627,740" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 4"
+          TopLeft="274,617.5" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Data Flow Task\Merge Join"
+          TopLeft="430.5,719.5" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="418,821.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 1"
+          TopLeft="443,617.5" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Data Flow Task\Conditional Split"
+          TopLeft="619,461" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Data Flow Task\Vehicles_txt"
+          TopLeft="236,5.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 3"
+          TopLeft="251,209.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="486,188" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Data Flow Task\Merge Join 2"
+          TopLeft="623,381" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Data Flow Task\Accident_txt"
+          TopLeft="427.5,413.5" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="255.5,413.5" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Union All Output 1]"
-          TopLeft="296.5,965.5">
+          TopLeft="497,965.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4989,31 +6239,109 @@ where [refTable].[Day_dt] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output4]"
-          TopLeft="127.5,659.5">
+          Id="Package\Data Flow Task.Paths[Sort Output7]"
+          TopLeft="807,350">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="148.166666666667,60"
+              EndConnector="-90.6666666666666,31"
               Start="0,0"
-              End="148.166666666667,52.5">
+              End="-90.6666666666666,23.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5720653789004" />
+                    End="0,14.3927576601671" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.5720653789004"
-                    Point2="0,35.5720653789004"
-                    Point3="4,35.5720653789004" />
+                    Point1="0,14.3927576601671"
+                    Point2="0,18.3927576601671"
+                    Point3="-4,18.3927576601671" />
                   <mssgle:LineSegment
-                    End="144.166666666667,35.5720653789004" />
+                    End="-86.6666666666666,18.3927576601671" />
                   <mssgle:CubicBezierSegment
-                    Point1="144.166666666667,35.5720653789004"
-                    Point2="148.166666666667,35.5720653789004"
-                    Point3="148.166666666667,39.5720653789004" />
+                    Point1="-86.6666666666666,18.3927576601671"
+                    Point2="-90.6666666666666,18.3927576601671"
+                    Point3="-90.6666666666666,22.3927576601671" />
                   <mssgle:LineSegment
-                    End="148.166666666667,52.5" />
+                    End="-90.6666666666666,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output6]"
+          TopLeft="305,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output5]"
+          TopLeft="694.5,692">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output4]"
+          TopLeft="497,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.8333333333334,60"
+              Start="0,0"
+              End="20.8333333333334,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5720653789005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5720653789005"
+                    Point2="0,35.5720653789005"
+                    Point3="4,35.5720653789005" />
+                  <mssgle:LineSegment
+                    End="16.8333333333334,35.5720653789005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.8333333333334,35.5720653789005"
+                    Point2="20.8333333333334,35.5720653789005"
+                    Point3="20.8333333333334,39.5720653789005" />
+                  <mssgle:LineSegment
+                    End="20.8333333333334,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5024,41 +6352,7 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output3]"
-          TopLeft="296.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="22.3333333333333,60"
-              Start="0,0"
-              End="22.3333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5988857938719" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5988857938719"
-                    Point2="0,35.5988857938719"
-                    Point3="4,35.5988857938719" />
-                  <mssgle:LineSegment
-                    End="18.3333333333333,35.5988857938719" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.3333333333333,35.5988857938719"
-                    Point2="22.3333333333333,35.5988857938719"
-                    Point3="22.3333333333333,39.5988857938719" />
-                  <mssgle:LineSegment
-                    End="22.3333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output2]"
-          TopLeft="127.5,251.5">
+          TopLeft="136,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5091,14 +6385,14 @@ where [refTable].[Day_dt] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output1]"
-          TopLeft="296.5,659.5">
+          Id="Package\Data Flow Task.Paths[Sort Output2]"
+          TopLeft="328,659.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20.8333333333333,60"
+              EndConnector="148.166666666667,60"
               Start="0,0"
-              End="20.8333333333333,52.5">
+              End="148.166666666667,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -5109,13 +6403,47 @@ where [refTable].[Day_dt] = ?</property>
                     Point2="0,35.5720653789004"
                     Point3="4,35.5720653789004" />
                   <mssgle:LineSegment
-                    End="16.8333333333333,35.5720653789004" />
+                    End="144.166666666667,35.5720653789004" />
                   <mssgle:CubicBezierSegment
-                    Point1="16.8333333333333,35.5720653789004"
-                    Point2="20.8333333333333,35.5720653789004"
-                    Point3="20.8333333333333,39.5720653789004" />
+                    Point1="144.166666666667,35.5720653789004"
+                    Point2="148.166666666667,35.5720653789004"
+                    Point3="148.166666666667,39.5720653789004" />
                   <mssgle:LineSegment
-                    End="20.8333333333333,52.5" />
+                    End="148.166666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output1]"
+          TopLeft="305,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.3333333333334,60"
+              Start="0,0"
+              End="22.3333333333334,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5988857938719" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5988857938719"
+                    Point2="0,35.5988857938719"
+                    Point3="4,35.5988857938719" />
+                  <mssgle:LineSegment
+                    End="18.3333333333334,35.5988857938719" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.3333333333334,35.5988857938719"
+                    Point2="22.3333333333334,35.5988857938719"
+                    Point3="22.3333333333334,39.5988857938719" />
+                  <mssgle:LineSegment
+                    End="22.3333333333334,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5126,18 +6454,30 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="296.5,455.5">
+          TopLeft="573,336">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="98.6666666666666,45"
               Start="0,0"
-              End="0,52.5">
+              End="98.6666666666666,37.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,22.6991643454039" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.6991643454039"
+                    Point2="0,26.6991643454039"
+                    Point3="4,26.6991643454039" />
+                  <mssgle:LineSegment
+                    End="94.6666666666666,26.6991643454039" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94.6666666666666,26.6991643454039"
+                    Point2="98.6666666666666,26.6991643454039"
+                    Point3="98.6666666666666,30.6991643454039" />
+                  <mssgle:LineSegment
+                    End="98.6666666666666,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5148,18 +6488,86 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Pivot Default Output]"
-          TopLeft="296.5,557.5">
+          TopLeft="305,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="23,60"
               Start="0,0"
-              End="0,52.5">
+              End="23,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="19,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19,30"
+                    Point2="23,30"
+                    Point3="23,34" />
+                  <mssgle:LineSegment
+                    End="23,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output3]"
+          TopLeft="696.25,423">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output2]"
+          TopLeft="698,782">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-201,39.5"
+              Start="0,0"
+              End="-201,32">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.75"
+                    Point2="0,19.75"
+                    Point3="-4,19.75" />
+                  <mssgle:LineSegment
+                    End="-197,19.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-197,19.75"
+                    Point2="-201,19.75"
+                    Point3="-201,23.75" />
+                  <mssgle:LineSegment
+                    End="-201,32" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5170,18 +6578,30 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output1]"
-          TopLeft="296.5,353.5">
+          TopLeft="563.5,740.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="63.5,20.5"
               Start="0,0"
-              End="0,52.5">
+              End="56,20.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="27.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.75,0"
+                    Point2="31.75,0"
+                    Point3="31.75,4" />
+                  <mssgle:LineSegment
+                    End="31.75,16.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31.75,16.5"
+                    Point2="31.75,20.5"
+                    Point3="35.75,20.5" />
+                  <mssgle:LineSegment
+                    End="56,20.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5192,7 +6612,7 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="296.5,761.5">
+          TopLeft="305,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5213,56 +6633,122 @@ where [refTable].[Day_dt] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
-          TopLeft="294.25,1168.5">
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          TopLeft="497,1067.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.5"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,40">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,14.1953125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="296.5,1067.5">
+          Id="Package\Data Flow Task.Paths[Flat File Source Output4]"
+          TopLeft="564,230">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59"
+              EndConnector="9,64"
               Start="0,0"
-              End="0,51.5">
+              End="9,56.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.5" />
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5,32"
+                    Point2="9,32"
+                    Point3="9,36" />
+                  <mssgle:LineSegment
+                    End="9,56.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,19.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output3]"
+          TopLeft="90,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="46.0000000000001,60"
+              Start="0,0"
+              End="46.0000000000001,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="42.0000000000001,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.0000000000001,30"
+                    Point2="46.0000000000001,30"
+                    Point3="46.0000000000001,34" />
+                  <mssgle:LineSegment
+                    End="46.0000000000001,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output2]"
+          TopLeft="497,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,162"
+              Start="0,0"
+              End="0,154.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,154.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output1]"
-          TopLeft="296.5,149.5">
+          TopLeft="305,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5284,7 +6770,41 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="81.5,47.5">
+          TopLeft="797,261">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10,47"
+              Start="0,0"
+              End="10,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
+                  <mssgle:LineSegment
+                    End="6,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6,23.5"
+                    Point2="10,23.5"
+                    Point3="10,27.5" />
+                  <mssgle:LineSegment
+                    End="10,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
+          TopLeft="497,863.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5306,7 +6826,29 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="296.5,863.5">
+          TopLeft="694.25,607">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Aggregate Output 1]"
+          TopLeft="305,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5327,71 +6869,51 @@ where [refTable].[Day_dt] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Aggregate Output 1]"
-          TopLeft="81.5,149.5">
+          Id="Package\Data Flow Task.Paths[Case 1]"
+          TopLeft="698,503">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="46,60"
+              EndConnector="0,62"
               Start="0,0"
-              End="46,52.5">
+              End="0,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
-                  <mssgle:LineSegment
-                    End="42,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="42,30"
-                    Point2="46,30"
-                    Point3="46,34" />
-                  <mssgle:LineSegment
-                    End="46,52.5" />
+                    End="0,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-15.2180859375,22.47314453125,30.436171875,9.5537109375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output2]"
-          TopLeft="94.5,510">
+          Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
+          TopLeft="497,1169.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33.0000000000001,107.5"
+              EndConnector="0,60"
               Start="0,0"
-              End="33.0000000000001,100">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.75"
-                    Point2="0,53.75"
-                    Point3="4,53.75" />
-                  <mssgle:LineSegment
-                    End="29.0000000000001,53.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.0000000000001,53.75"
-                    Point2="33.0000000000001,53.75"
-                    Point3="33.0000000000001,57.75" />
-                  <mssgle:LineSegment
-                    End="33.0000000000001,100" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5411,7 +6933,7 @@ where [refTable].[Day_dt] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\D_Speed_Limit">
+    design-time-name="Package\Data Flow Task\D_Time">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -5421,7 +6943,7 @@ where [refTable].[Day_dt] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[D_SPEED_LIMIT]</Value>
+          type="q3:string">[dbo].[D_TIME]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -5434,7 +6956,7 @@ where [refTable].[Day_dt] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\D_Time">
+    design-time-name="Package\Data Flow Task\D_Speed_Limit">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -5444,7 +6966,7 @@ where [refTable].[Day_dt] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[D_TIME]</Value>
+          type="q3:string">[dbo].[D_SPEED_LIMIT]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>

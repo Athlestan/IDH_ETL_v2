@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="DataProfiling"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{9E7BD948-C0BE-495C-A502-124166044D9D}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{0392E37F-9F13-41F2-867F-824B6F367AFC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,22 +37,34 @@
           DTS:ConnectionString="D:\PJWSTK\SEMESTR_3\IDH\Projekt\dft-accident-data -WINNER\Data_Profiling" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Data_Profiling2]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{59CE7CF3-46E6-4472-9429-A04BA1B71547}"
+      DTS:ObjectName="Data_Profiling2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\PJWSTK\SEMESTR_3\IDH\Projekt\dft-accident-data -WINNER\Data_Profiling2" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Profiling Task"
+      DTS:refId="Package\F_Accidents"
       DTS:CreationName="Microsoft.DataProfilingTask"
       DTS:Description="Data Profiling Task"
-      DTS:DTSID="{CECC7E55-938A-49CE-B905-4AFA2D8DF06E}"
+      DTS:DTSID="{1CFF41D1-C33E-4EB1-B34C-25A43155A615}"
       DTS:ExecutableType="Microsoft.DataProfilingTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Profiling Task"
+      DTS:ObjectName="F_Accidents"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <DataProfilingTaskData
-          Destination="Data_Profiling">
+          Destination="Data_Profiling2"
+          OverwriteDestination="True">
           <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
 <DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
   <ProfileVersion>1.0</ProfileVersion>
@@ -61,55 +73,99 @@
     <ProfileMode>Exact</ProfileMode>
     <Timeout>0</Timeout>
     <Requests>
-      <ColumnPatternProfileRequest ID="PatternReq">
-        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
-        <Column IsWildCard="false" ColumnName="Longitude" />
-        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
-        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
-        <CaseSensitive>false</CaseSensitive>
-        <Delimiters> \t\r\n</Delimiters>
-        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
-        <TagTableName />
-      </ColumnPatternProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq">
         <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
+        <Table Schema="dbo" Table="F_Accidents" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq">
         <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
+        <Table Schema="dbo" Table="F_Accidents" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
         <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
+        <Table Schema="dbo" Table="F_Accidents" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq">
         <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
+        <Table Schema="dbo" Table="F_Accidents" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
-      <ColumnPatternProfileRequest ID="PatternReq1">
-        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
-        <Column IsWildCard="true" />
-        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
-        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
-        <CaseSensitive>false</CaseSensitive>
-        <Delimiters> \t\r\n</Delimiters>
-        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
-        <TagTableName />
-      </ColumnPatternProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq">
         <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
-        <Table Schema="dbo" Table="F_Accidents_tmp_4" />
+        <Table Schema="dbo" Table="F_Accidents" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\F_Accidents_ST"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{717E1AD9-06AA-4CA3-B6F3-5DB4B2DD16D1}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="F_Accidents_ST"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="Data_Profiling"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
+        <Table Schema="dbo" Table="F_Accidents_ST" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
+        <Table Schema="dbo" Table="F_Accidents_ST" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
+        <Table Schema="dbo" Table="F_Accidents_ST" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
+        <Table Schema="dbo" Table="F_Accidents_ST" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{4E755D69-3EC5-45D2-8D43-B11FA4A02784}</DataSourceID>
+        <Table Schema="dbo" Table="F_Accidents_ST" />
         <KeyColumns>
           <Column IsWildCard="true" />
         </KeyColumns>
@@ -128,6 +184,16 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{1120F5C7-748C-4065-A537-D664B40B47A6}"
+      DTS:From="Package\F_Accidents_ST"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\F_Accidents" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -139,11 +205,37 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Data Profiling Task"
-          TopLeft="357,81" />
+          Size="140,42"
+          Id="Package\F_Accidents"
+          TopLeft="461,266" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\F_Accidents_ST"
+          TopLeft="455,149" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="533,191">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75"
+              Start="0,0"
+              End="0,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
