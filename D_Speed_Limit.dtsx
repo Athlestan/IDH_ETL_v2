@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="D_Speed_Limit"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{9FB82473-F48C-4532-8BD4-A67716F3891D}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{6A0E1978-45D0-4DD9-A0A2-D941B81FD302}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -709,7 +709,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SPEED_LIMIT_RK]"
-                      dataType="i4"
+                      dataType="i8"
                       name="SPEED_LIMIT_RK" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed_Limit]"
@@ -909,13 +909,13 @@
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="94,271" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="109,60" />
-        <NodeLayout
           Size="99,42"
           Id="Package\Data Flow Task\Sort"
           TopLeft="154,152" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="109,60" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
           TopLeft="187,102">

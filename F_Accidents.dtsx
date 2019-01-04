@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="F_Accidents"
   DTS:PackageType="5"
-  DTS:VersionBuild="113"
-  DTS:VersionGUID="{E8C5BC57-16E8-4886-96F0-55721CBD3E82}">
+  DTS:VersionBuild="114"
+  DTS:VersionGUID="{BC231D46-13CF-4660-8AEC-FEE5A86526FA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1826,7 +1826,7 @@ where [refTable].[Speed_Limit] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="SPEED_LIMIT_RK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Speed_Limit" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="SPEED_LIMIT_RK" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Speed_Limit" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -1885,7 +1885,7 @@ where [refTable].[Speed_Limit] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\D_Speed_Limit.Outputs[Lookup Match Output].Columns[SPEED_LIMIT_RK]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Data Flow Task\D_Speed_Limit.Outputs[Lookup Match Output].Columns[SPEED_LIMIT_RK]"
                       name="SPEED_LIMIT_RK"
@@ -1984,12 +1984,12 @@ where [refTable].[Day_dt] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TIME_RK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Day_dt" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Season" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Week_Day" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Month_nm" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Season_nm" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TIME_RK" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Day_dt" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Season" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Week_Day" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Month_nm" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Season_nm" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Day_dt]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Day_dt]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2043,7 +2043,7 @@ where [refTable].[Day_dt] = ?</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\D_Time.Outputs[Lookup Match Output].Columns[TIME_RK]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Data Flow Task\D_Time.Outputs[Lookup Match Output].Columns[TIME_RK]"
                       name="TIME_RK"
@@ -2212,13 +2212,13 @@ where [refTable].[Day_dt] = ?</property>
                       lineageId="Package\Data Flow Task\Remove unused columns.Outputs[Union All Output 1].Columns[Male_drive_cnt]" />
                     <inputColumn
                       refId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].Columns[SPEED_LIMIT_RK]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="SPEED_LIMIT_RK"
                       externalMetadataColumnId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].ExternalColumns[SPEED_LIMIT_RK]"
                       lineageId="Package\Data Flow Task\D_Speed_Limit.Outputs[Lookup Match Output].Columns[SPEED_LIMIT_RK]" />
                     <inputColumn
                       refId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].Columns[TIME_RK]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="TIME_RK"
                       externalMetadataColumnId="Package\Data Flow Task\F_Accidents_ST.Inputs[OLE DB Destination Input].ExternalColumns[TIME_RK]"
                       lineageId="Package\Data Flow Task\D_Time.Outputs[Lookup Match Output].Columns[TIME_RK]" />
@@ -4159,14 +4159,14 @@ where [refTable].[Day_dt] = ?</property>
               startId="Package\Data Flow Task\D_Accident_Details.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Merge Join Output1]"
-              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
-              name="Merge Join Output"
-              startId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Merge Join Output]"
               endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
               name="Merge Join Output"
               startId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output]"
+              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              name="Merge Join Output"
+              startId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Pivot Default Output]"
               endId="Package\Data Flow Task\Sort 4.Inputs[Sort Input]"
@@ -4811,7 +4811,7 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output1]"
-          TopLeft="290,353.5">
+          TopLeft="472,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4833,7 +4833,7 @@ where [refTable].[Day_dt] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="472,761.5">
+          TopLeft="290,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4862,7 +4862,7 @@ where [refTable].[Day_dt] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -4872,7 +4872,7 @@ where [refTable].[Day_dt] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4885,7 +4885,7 @@ where [refTable].[Day_dt] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -4895,7 +4895,7 @@ where [refTable].[Day_dt] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

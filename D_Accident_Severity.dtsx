@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="D_Accident_Severity"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{9C6EDDEB-2097-4DD7-8D4B-9E286163DF36}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{C0BFCA2B-D362-4666-B06D-DA10F12EAF69}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -288,7 +288,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACCIDENT_SEVERITY_RK]"
-                      dataType="i2"
+                      dataType="i8"
                       name="ACCIDENT_SEVERITY_RK" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Accident_Severity]"
@@ -413,13 +413,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="125,67" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="111,215" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="125,67" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
           TopLeft="201.25,109">

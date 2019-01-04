@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="D_Road_Type"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{78FB1F7B-3201-4DDE-9132-521D8F66132D}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{9ACFA3FA-DAA1-490C-B75C-AAD38A030004}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -288,7 +288,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ROAD_TYPE_RK]"
-                      dataType="i2"
+                      dataType="i8"
                       name="ROAD_TYPE_RK" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Road_Type]"
@@ -375,13 +375,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="176,51" />
-        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task"
           TopLeft="143,187" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="176,51" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="261,93">
@@ -425,13 +425,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="199,78" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="254,239" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="199,78" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
           TopLeft="277,120">

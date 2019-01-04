@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="D_Weather"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{C5612CAF-E740-4CE3-A2B8-267431D60150}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{629C56BB-82D5-4594-A2CB-76A28C9279FA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -308,7 +308,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WEATHER_RK]"
-                      dataType="i4"
+                      dataType="i8"
                       name="WEATHER_RK" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weather]"
